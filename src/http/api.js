@@ -1,12 +1,21 @@
 import request from "./request"
 
 //获取讲师列表
-// export function getApi() {
-//     return request({
-//         method: 'get',
-//         url: "api/admin/lecturer/name/id"
-//     })
-// }
+export function getlis(name, data) {
+    return request({
+        method: 'get',
+        url: `/api/teacher?${name}=${data}`,
+
+    })
+}
+//获取讲师列表
+export function getApi() {
+    return request({
+        method: 'get',
+        url: `/api/teacher`,
+
+    })
+}
 
 // 添加讲师列表 /api/teacher
 export function setUpdata(data) {
@@ -18,21 +27,21 @@ export function setUpdata(data) {
 }
 
 // 修改讲师列表
-// export function UpdataUpdata(id, data) {
-//     return request({
-//         method: 'put',
-//         url: `api/admin/lecturer/${id}`,
-//         data
-//     })
-// }
+export function updataTeacher(id, data) {
+    return request({
+        method: 'put',
+        url: `/api/teacher/${id}`,
+        data
+    })
+}
 
 //删除讲师列表
-// export function deleteList(id) {
-//     return request({
-//         method: 'delete',
-//         url: `api/admin/lecturer/${id}`
-//     })
-// }
+export function deleteList(id) {
+    return request({
+        method: 'delete',
+        url: `/api/teacher/${id}`
+    })
+}
 
 // 根据姓名查询讲师
 // export function getNameLecturer(key, value) {

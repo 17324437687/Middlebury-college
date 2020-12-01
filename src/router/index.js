@@ -24,6 +24,11 @@ const routes = [{
         name: 'list',
         component: () => import("../views/teacher/List")
       },
+      {
+        path: '/course',
+        name: "course",
+        component: () => import("../views/course/addCourse")
+      }
 
     ]
   }
