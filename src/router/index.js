@@ -28,8 +28,22 @@ const routes = [{
         path: '/course',
         name: "course",
         component: () => import("../views/course/addCourse")
+      },
+      {
+        path: '/courselist',
+        name: "courselist",
+        component: () => import("../views/course/courselist")
+      },
+      {
+        path: '/elective',
+        name: "elective",
+        component: () => import("../views/Elective/Elective")
+      },
+      {
+        path: '/electivelist',
+        name: "electivelist",
+        component: () => import("../views/Elective/Electivelist")
       }
-
     ]
   }
 

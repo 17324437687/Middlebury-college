@@ -1,6 +1,6 @@
 import request from "./request"
 
-//获取讲师列表
+//讲师列表
 export function getlis(name, data) {
     return request({
         method: 'get',
@@ -40,6 +40,38 @@ export function deleteList(id) {
     return request({
         method: 'delete',
         url: `/api/teacher/${id}`
+    })
+}
+
+// 获取课程分类 
+export function list() {
+    return request({
+        method: 'get',
+        url: `/api/options`
+    })
+}
+export function course() {
+    return request({
+        method: 'get',
+        url: `/api/course`
+    })
+}
+
+//提交课程分类
+export function conrseList(data) {
+    return request({
+        method: 'post',
+        url: `/api/course/list`,
+        data
+    })
+}
+
+// 获取课程分类列表
+export function getConrseList() {
+    return request({
+        method: 'get',
+        url: `/api/course/list`,
+
     })
 }
 

@@ -32,9 +32,9 @@
               </template>
               <el-menu-item-group>
                 <el-menu-item index="/course">导入课程分类</el-menu-item>
-                <el-menu-item index=""> 课程分类列表 </el-menu-item>
-                <el-menu-item index="">发布课程</el-menu-item>
-                <el-menu-item index="">课程列表</el-menu-item>
+                <el-menu-item index="/courselist"> 课程分类列表 </el-menu-item>
+                <el-menu-item index="/elective">发布课程</el-menu-item>
+                <el-menu-item index="electivelist">课程列表</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
 

@@ -298,7 +298,7 @@ export default {
     },
     handleCurrentChange(page) {
       //获取当前页
-      let index = this.paginations.page_size * page - 1;
+      let index = this.paginations.page_size * (page - 1);
       let nums = this.paginations.page_size * page;
       let tables = [];
       for (let i = index; i < nums; i++) {
